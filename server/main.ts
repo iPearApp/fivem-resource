@@ -1,13 +1,13 @@
 import {ESX} from "./esx";
-import iPearClient from "@ipear/client";
 import {initEvents} from "./exports";
 import {initHandleEvents} from "./events";
 import {getPhoneNumber} from "./functions";
+import iPearAdmin from "@ipear/admin";
 
 const secretKey = GetConvar("ipear_secretkey", "");
 const endpoint = GetConvar("ipear_endpoint", "");
 
-export const client = new iPearClient(secretKey, {
+export const client = new iPearAdmin(secretKey, {
     endpoint: endpoint,
     logger: {
         connectionsLogs: true,
