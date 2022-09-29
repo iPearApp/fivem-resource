@@ -5,7 +5,7 @@ export function getPhoneNumber(identifier: string) {
 }
 
 export function getIdentifierByPhoneNumber(number: string) {
-    return exports.oxmysql.single_async("SELECT users.identifier FROM users WHERE users.identifier = ?", [number]);
+    return exports.oxmysql.single_async("SELECT users.identifier FROM users WHERE users.phone_number = ?", [number]);
 }
 
 // -- CONTACTS
