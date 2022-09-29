@@ -1,11 +1,18 @@
 # iPear (fivem-resource)
 
+This is an example made with **oxmysql** (**1.9.2**) and **ESX 1.2**.
+If your server doesn't work with **oxmysql** and **ESX** then you need to adapt the resource.
+
+## Dependencies
+- OxMySQL (1.9.2) [[github]](https://github.com/overextended/oxmysql)
+- ESX (1.2) [[github]](https://github.com/esx-framework)
+
 ## Project setup
 ```shell
 npm install
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production (nodejs v16)
 ```shell
 npm run build
 ```
